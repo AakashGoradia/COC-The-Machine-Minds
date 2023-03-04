@@ -15,7 +15,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export const Navbar2 = () => {
+const Navbar2 = () => {
     return (
         <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
@@ -67,7 +67,7 @@ export const Navbar2 = () => {
                                         <Link to='/about'>
                                             About Us
                                         </Link>
-                                        <Link to='/Subscribe'>
+                                        <Link to='/subscribe'>
                                         Subscribe
                                         </Link>
                                         <Link to='/Contact'>
@@ -167,3 +167,5 @@ export const Navbar2 = () => {
         </Disclosure>
     )
 }
+
+export default Navbar2;

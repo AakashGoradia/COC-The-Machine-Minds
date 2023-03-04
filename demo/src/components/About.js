@@ -1,3 +1,9 @@
-export const About = () => {
-    return <div id='course'>About Us</div>
+import React from 'react'
+
+const About = () => {
+  return (
+    <div>About</div>
+  )
 }
+
+export default About
