@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg'
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ')
 }
 
 const Navbar2 = () => {
@@ -36,10 +36,10 @@ const Navbar2 = () => {
                                         <Link to='/about' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
                                             About Us
                                         </Link>
-                                        <Link to='/Subscribe' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
+                                        <Link to='/subscribe' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
                                         Subscribe
                                         </Link>
-                                        <Link to='/Contact' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
+                                        <Link to='/contact' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
                                         Contact
                                         </Link>
                                     </div>
@@ -107,5 +107,6 @@ const Navbar2 = () => {
             )}
         </Disclosure>
     )
+
 }
  export default Navbar2;
