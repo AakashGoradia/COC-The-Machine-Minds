@@ -22,11 +22,21 @@ const TryApi=()=> {
       <div className="bg-gray-600
        text-white w-80 flex-shrink-0 flex flex-col justify-between">
         <div className="p-6">
-          <h1 className="text-2xl font-bold">My Sidebar</h1>
-          <h2><p>Reviews from Companies</p></h2>
-          <p className="text-gray-500 mt-0 ">"Our company has been using this face detection app for several months now and we couldn't be happier with the results. The accuracy of the app is impressive and it has saved us a lot of time and resources in our image processing workflows. The API is well-documented and easy to use, and the customer support has been excellent. We've also been impressed with the app's ability to detect faces in low-light and high-contrast images. Overall, we highly recommend this app to any company looking for a reliable and accurate face detection solution."</p>
-          <h2><p>Reviews from Companies</p></h2>
-          <p className="text-gray-500 mt-0 ">"I've been using this face detection app for a few weeks now and I'm blown away by how accurate it is. It's really easy to use and I love how it can detect multiple faces in the same image. The app is also really fast, which is great for when I need to process a lot of images quickly. Overall, I'm really happy with this app and would definitely recommend it to anyone who needs accurate and fast face detection."</p>
+          <h1 className="text-xl font-bold">Reviews from Companies </h1>
+          <h2><p>Google</p></h2>
+          
+          <p className="text-gray-500 mt-0 ">"Our company has been using this face detection app for several months now and we couldn't be happier with the results. "</p>
+          <h2><p>Amazon</p></h2>
+          <p className="text-gray-500 mt-0 ">"The accuracy of the app is impressive and it has saved us a lot of time and resources in our image processing workflows."</p>
+          <h2><p>Facebook</p></h2>
+          <p className="text-gray-500 mt-0 ">"The API is well-documented and easy to use, and the customer support has been excellent. "</p>
+          <h1 className="text-xl font-bold mt-5 ">Reviews from Customers </h1>
+          <h2><p>Ram Singh</p></h2>
+          <p className="text-gray-500 mt-0 ">"I've been using this face detection app for a few weeks now and I'm blown away by how accurate it is. "</p>
+          <h2><p>Shyam Singh</p></h2>
+          <p className="text-gray-500 mt-0 ">"It's really easy to use and I love how it can detect multiple faces in the same image. "</p>
+          <h2><p>Ram Singh</p></h2>
+          <p className="text-gray-500 mt-0 ">"The app is also really fast, which is great for when I need to process a lot of images quickly. "</p>
         
         </div>
         <div className="p-6">
