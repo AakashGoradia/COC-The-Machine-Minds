@@ -1,7 +1,7 @@
 import React from 'react'
 import land from '../assets/land.jpg'
 
-function Landing() {
+const Landing=()=> {
   return (
     <div>
       {/* <header class="text-gray-700 body-font border-b border-gray-200">
