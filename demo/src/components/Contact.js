@@ -1,3 +1,3 @@
-export const About = () => {
-    return <div id='course'>About Us</div>
+export const Contact = () => {
+    return <div id='course'>Contact</div>
 }

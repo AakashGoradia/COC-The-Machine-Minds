@@ -6,10 +6,11 @@ import {About} from './components/About'
 import {Navbar2} from './components/Navbar2';
 import { Subscribe } from './components/Subscribe.js';
 import { Contact } from './components/Contact.js';
+import { TryApi } from './components/TryApi.js';
 function App() {
   return (
     <>
-    <div>
+    <div class='bg-white'>
       {/* <Navbar /> */}
       <Navbar2 />
       <Routes>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/subscribe' element={<Subscribe />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/TryApi' element={<TryApi />}/>
 
         {/* <Route path='about' element={<About />}/>
         <Route path='*' element={<Error/>}/> */}
