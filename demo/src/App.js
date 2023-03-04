@@ -11,7 +11,7 @@ function App() {
     <>
     <div>
       <Navbar2 />
-      <Landing/>
+      {/* <Landing/> */}
       <Routes>
         <Route path='/about' element={<About/>}/>
         <Route path='/home' element={<Home/>}/>

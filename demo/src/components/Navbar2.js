@@ -57,7 +57,7 @@ const Navbar2 = () => {
                                         <Link to='/about'>
                                             About Us
                                         </Link>
-                                        <Link to='/Subscribe'>
+                                        <Link to='/subscribe'>
                                         Subscribe
                                         </Link>
                                         <Link to='/Contact'>
