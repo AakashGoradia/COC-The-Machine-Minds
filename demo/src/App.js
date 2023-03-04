@@ -1,11 +1,11 @@
 import {Route,Routes} from 'react-router-dom'
 import Home from './components/Home';
-import About from './components/About';
 import Navbar2 from './components/Navbar2';
 import Subscribe from './components/Subscribe';
-import Contact from './components/Contact';
 import TryApi from './components/TryApi';
 import Landing from './pages/Landing';
+import AboutUs from './components/AboutUs';
+import Doc from './components/Doc'
 
 function App() {
   return (
@@ -14,10 +14,10 @@ function App() {
       <Navbar2 />
       {/* <Landing/> */}
       <Routes>
-        <Route path='/about' element={<About/>}/>
+        <Route path='/doc' element={<Doc/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/subscribe' element={<Subscribe />}/>
-        <Route path='/contact' element={<Contact />}/>
+        <Route path='/about' element={<AboutUs />}/>
         <Route path='/TryApi' element={<TryApi />}/>
       </Routes>
     </div>
