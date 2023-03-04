@@ -12,6 +12,7 @@ function App() {
     <div>
       {/* <Navbar /> */}
       <Navbar2 />
+      <Landing/>
       <Routes>
         <Route path='/about' element={<About/>}/>
         <Route path='/home' element={<Home/>}/>
@@ -21,7 +22,6 @@ function App() {
         {/* <Route path='about' element={<About />}/>
         <Route path='*' element={<Error/>}/> */}
       </Routes>
-    </div>
     
     </>
   );
