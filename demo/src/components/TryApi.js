@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Try from '../assets/try.jpg'
 
 const TryApi=()=> {
   const [url, setUrl] = useState("");
@@ -18,70 +19,99 @@ const TryApi=()=> {
   }
   return (
     <>
-    <div className="flex h-screen">
-      <div className="bg-gray-600
-       text-white w-80 flex-shrink-0 flex flex-col justify-between">
-        <div className="p-6">
-          <h1 className="text-xl font-bold">Reviews from Companies </h1>
-          <h2><p>Google</p></h2>
-          
-          <p className="text-gray-500 mt-0 ">"Our company has been using this face detection app for several months now and we couldn't be happier with the results. "</p>
-          <h2><p>Amazon</p></h2>
-          <p className="text-gray-500 mt-0 ">"The accuracy of the app is impressive and it has saved us a lot of time and resources in our image processing workflows."</p>
-          <h2><p>Facebook</p></h2>
-          <p className="text-gray-500 mt-0 ">"The API is well-documented and easy to use, and the customer support has been excellent. "</p>
-          <h1 className="text-xl font-bold mt-5 ">Reviews from Customers </h1>
-          <h2><p>Ram Singh</p></h2>
-          <p className="text-gray-500 mt-0 ">"I've been using this face detection app for a few weeks now and I'm blown away by how accurate it is. "</p>
-          <h2><p>Shyam Singh</p></h2>
-          <p className="text-gray-500 mt-0 ">"It's really easy to use and I love how it can detect multiple faces in the same image. "</p>
-          <h2><p>Ram Singh</p></h2>
-          <p className="text-gray-500 mt-0 ">"The app is also really fast, which is great for when I need to process a lot of images quickly. "</p>
+       <section class="text-gray-700 body-font border-t border-gray-200">
         
-        </div>
-        <div className="p-6">
-          
-        </div>
-      </div>
-      <div className="snap-centre ml-10 justify-center align-middle">
-       <form
-        onSubmit={handleSubmit}
-        className="flex flex-col items-center max-w-lg w-full">
-        <label htmlFor="url" className="mb-4 w-full mt-7 mx-7 align-center">
-          Enter a URL:
-        </label>
-        <input
-          type="text"
-          id="url"
-          name="url"
-          value={url}
-          onChange={handleUrlChange}
-          placeholder="https://www.example.com"
-          className="w-full mb-8 p-4 rounded-lg border-2 border-gray-300 items-center mt-2.5"
-        />
-        <label htmlFor="dropdown" className="mb-4 w-full items-center">
-          Select an option:
-        </label>
-        <select
-          id="dropdown"
-          name="dropdown"
-          value={dropdownValue}
-          onChange={handleDropdownChange}
-          className="p-4 rounded-lg border-2 border-gray-300"
-        >
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </select>
-        <button
-          type="submit"
-          className="mt-8 py-4 px-6 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all"
-        >
-          Submit
-        </button>
-      </form>
-      </div>
+       <h2 className="font-dm font-bold text-3xl text-center lg:mt-8">Detect Your Image Here</h2>
+       
+  <div class="container lg:px-5 lg:py-8 mx-auto flex flex-wrap">
+
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+
+      <img alt="feature" class="object-cover object-center h-full w-full" src={Try}/>
     </div>
+    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <div class="flex flex-col mb-10 lg:items-start items-center lg:ml-12">
+
+
+
+        <div class="flex-grow">
+          <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-[#008080] text-white mb-5">
+
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+  <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+</svg>
+</div>
+         <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Enter Your URL:</h2> 
+<input type="email" id="helper-text" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="URL"/>
+<p id="helper-text-explanation" class="mt-2 text-sm text-gray-500 dark:text-gray-400">We’ll never share your details. Read our <a href="#" class="font-medium text-[#008080] hover:underline dark:[#008080]">Privacy Policy</a>.</p>
+        </div>
+      </div>
+      <button class="text-center inline-flex text-black bg-white py-2 px-6 focus:outline-none hover:bg-[#ff7f50] rounded text-lg font-dm border-black border-2 font-medium">View the Results
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+      </button>
+
+      {/* <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+        {/* <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Enter Profile URL</h2>
+          
+<form>
+    <div class="flex">
+        <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+        <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 dark:border-gray-700 dark:text-white rounded-l-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800" type="button">All categories <svg aria-hidden="true" class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Shopping</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Images</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">News</a>
+            </li>
+            <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Finance</a>
+            </li>
+            </ul>
+        </div>
+        {/* <div class="relative w-full">
+            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-100 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search" required/>
+            <button type="submit" class="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+        </div> */}
+    {/* </div> */}
+{/* </form> */}
+
+        {/* </div> */} 
+      {/* </div> */}
+      {/* <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        {/* <div class="flex-grow">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Neptune</h2>
+          <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+          <a href="/" class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div> */}
+      {/* </div> */} 
+    </div>
+  </div>
+</section>
     </>
   );
 }

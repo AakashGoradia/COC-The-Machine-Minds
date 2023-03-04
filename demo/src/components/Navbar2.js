@@ -39,11 +39,11 @@ const Navbar2 = () => {
                                         <Link to='/subscribe' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
                                         Subscribe
                                         </Link>
-                                        <Link to='/contact' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
-                                        Contact
+                                        <Link to='/doc' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
+                                        Documentation
                                         </Link>
                                         <Link to='/TryApi' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
-                                        TryApi
+                                        Try the Product
                                         </Link>
                                     </div>
                                 </div>
