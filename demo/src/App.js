@@ -19,6 +19,7 @@ function App() {
         <Route path='/subscribe' element={<Subscribe />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/TryApi' element={<TryApi />}/>
+
       </Routes>
     </div>
       </>
