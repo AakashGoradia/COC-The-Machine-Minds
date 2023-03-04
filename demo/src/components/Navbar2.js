@@ -4,16 +4,16 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg'
 
-// const navigation = [
-//   { name: 'Dashboard', href: '', current: true },
-//   { name: 'About', href: 'C:\\Users\\JUMBO\\complete_react\\demo1\\demo1\\COC-The-Machine-Minds\\demo\\src\\components\\About.js', current: false },
-//   { name: 'Projects', href: '#', current: false },
-//   { name: 'Calendar', href: '#', current: false },
-// ]
-//line 70
+
+const navigation = [
+  { name: 'Dashboard', href: '', current: true },
+  { name: 'About', href: 'C:\\Users\\JUMBO\\complete_react\\demo1\\demo1\\COC-The-Machine-Minds\\demo\\src\\components\\About.js', current: false },
+  { name: 'Projects', href: '#', current: false },
+  { name: 'Calendar', href: '#', current: false },
+]
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(' ')
 }
 
 const Navbar2 = () => {
@@ -128,5 +128,6 @@ const Navbar2 = () => {
             )}
         </Disclosure>
     )
+
 }
  export default Navbar2;
