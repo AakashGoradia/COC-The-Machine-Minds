@@ -1,3 +1,12 @@
-export const Contact = () => {
-    return <div id='course'>Contact</div>
+import React from 'react'
+
+const Contact = () => {
+  return (
+    <div>
+      Contact Us
+    </div>
+  )
 }
+
+export default Contact
+

@@ -1,9 +1,11 @@
-export const Subscribe = () => {
-    return(
-        <>
-        <div>subscribe Page</div>
-    <h1>hiiiii</h1>
-        </>
-    );
+import React from 'react'
+
+const Subscribe = () => {
+  return (
+    <div>
+      Subscribe Us
+    </div>
+  )
 }
 
+export default Subscribe
