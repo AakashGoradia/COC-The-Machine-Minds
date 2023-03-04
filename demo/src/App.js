@@ -4,6 +4,7 @@ import About from './components/About';
 import Navbar2 from './components/Navbar2';
 import Subscribe from './components/Subscribe';
 import Contact from './components/Contact';
+import TryApi from './components/TryApi';
 import Landing from './pages/Landing';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/subscribe' element={<Subscribe />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/TryApi' element={<TryApi />}/>
       </Routes>
     </div>
       </>

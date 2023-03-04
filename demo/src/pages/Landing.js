@@ -30,6 +30,7 @@ function Landing() {
   <div class="container mx-auto flex px-5 lg:py-8 lg:px-4 md:flex-row flex-col items-center">
     <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center lg:ml-4">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-black font-dm">FacePilot API
+
       </h1>
       <p class="mb-8 leading-relaxed font-medium font-dm text-black">A fast and accurate API that detects human faces in images, while filtering out cartoon or distorted images. It provides probabilities of the presence of a face and can even detect the gender of the person in the image.</p>
       <div class="flex justify-center">
