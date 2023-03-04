@@ -42,7 +42,7 @@ const Navbar2 = () => {
                                         <Link to='/contact' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
                                         Contact
                                         </Link>
-                                        <Link to='/TryApi'>
+                                        <Link to='/TryApi' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
                                         TryApi
                                         </Link>
                                     </div>
