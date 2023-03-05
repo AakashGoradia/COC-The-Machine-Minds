@@ -6,6 +6,7 @@ import TryApi from './components/TryApi';
 import Landing from './pages/Landing';
 import AboutUs from './components/AboutUs';
 import Doc from './components/Doc'
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/subscribe' element={<Subscribe />}/>
         <Route path='/about' element={<AboutUs />}/>
         <Route path='/TryApi' element={<TryApi />}/>
+        <Route path='/profile' element={<Profile />}/>
 
       </Routes>
     </div>
