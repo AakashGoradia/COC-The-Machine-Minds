@@ -4,7 +4,7 @@ import vector from "../assets/Arrow.svg"
 
 const SubscriptionPage=()=> {
   return (
-    <div className='bg-gradient-to-b from-[#cee3fc] to-[#edf5fe]'>
+    <div className='bg-gradient-to-b from-[#cee3fc] to-[#edf5fe] font-dm'>
             <p className='text-[#C71A03] text-[40px] font-["Montserrat"] font-bold text-center'>Subscription Plans</p>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:gap-3 justify-items-center mt-10'>
