@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Try from "../assets/try.jpg";
+import Write from "../assets/write.jpg"
 import axios from "axios";
 
 const TryApi = () => {
@@ -11,19 +12,20 @@ const TryApi = () => {
   console.log(message);
   const handleClick = async (e) => {
     e.preventDefault();
-    // 👇 "message" stores input field value
-    // setMessage(message);
-    // setUpdated(message)
     console.log(message);
-    const response = await axios.post(`http://localhost:5000/predict?url=${encodeURIComponent(message)}`, {}, {
-      headers: {
-        "Content-Type": 'application/json',
-        "Access-Control-Allow-Origin": "*"
+    const response = await axios.post(
+      `http://localhost:5000/predict?url=${encodeURIComponent(message)}`,
+      {},
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       }
-    });
+    );
     const res = response.data;
-    setMessage("")
-    if(res?.prediction) setUpdated(res.prediction)
+    setMessage("");
+    if (res?.prediction) setUpdated(res.prediction);
   };
 
   return (
@@ -34,7 +36,7 @@ const TryApi = () => {
         </h2>
 
         <div className="container lg:px-5 lg:py-8 mx-auto flex flex-wrap">
-          <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+          <div className="lg:w-1/2 lg:h-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <img
               alt="feature"
               className="object-cover object-center h-full w-full"
@@ -76,7 +78,7 @@ const TryApi = () => {
                 >
                   We'll never share your details. Read our{" "}
                   <a
-                    href="#"
+                    href="/"
                     className="font-medium text-[#008080] hover:underline dark:[#008080]"
                   >
                     Privacy Policy
@@ -86,7 +88,7 @@ const TryApi = () => {
               </div>
             </div>
             <button
-              className="text-center inline-flex text-black bg-white py-2 px-6 focus:outline-none hover:bg-[#ff7f50] rounded text-lg font-dm border-black border-2 font-medium"
+              className="text-center lg:ml-20 lg:w-64 inline-flex text-white bg-[#008080] py-2 px-6 focus:outline-none hover:bg-[#ff7f50] rounded text-lg font-dm border-black border-2 font-medium"
               onClick={handleClick}
             >
               View the Results
@@ -96,21 +98,36 @@ const TryApi = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="w-4 h-4 ml-auto"
+                className="w-4 h-4 ml-auto mt:8 pt:8"
                 viewBox="0 0 24 24"
               >
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
-              
             </button>
-            {updated ? <h2>The Gender is: {updated}</h2> : ""}
+            {updated ? (
+              <div className="lg:mt-20 lg:-ml-40">
+                <div className="px:auto lg:px-12 inline-flex">
+                  <div className="w-48 h-48 border-[1px] border-gray-800 rounded-lg overflow-hidden shadow-md max-w-sm">
+                    <img className="w-fit" src={Write} alt=""/>
+                    <div className="p-3 bg-[#CAE1FC]">
+                      <div className="font-medium text-sm mb-2 font-dm">
+                        HUMAN DETECTED
+                      </div>
+                      <p className="text-sm font-medium mb-2 font-dm">
+                        The Gender is: {updated}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </section>
     </>
   );
 };
-
-
 
 export default TryApi;

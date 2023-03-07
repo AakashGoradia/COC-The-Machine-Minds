@@ -3,7 +3,7 @@ import styles from "./LiveWave.css";
 
 const LiveWave = (props) => {
   return (
-    <div className="relative py-3 bg-gradient-to-b from-[#edf5fe] to-[#cee3fc]">
+    <div className="relative py-3 bg-gradient-to-b from-[#008080] to-[#ff7f50]">
       <div className="ocean overflow-x-hidden">
         <div className="wave"></div>
         <div className="wave"></div>

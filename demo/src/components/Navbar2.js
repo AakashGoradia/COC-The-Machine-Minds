@@ -30,7 +30,7 @@ const Navbar2 = () => {
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex font-dm font-medium">
 
-                                        <Link to='/home' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
+                                        <Link to='/' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
                                             Home
                                         </Link>
                                         <Link to='/about' className='text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8'>
