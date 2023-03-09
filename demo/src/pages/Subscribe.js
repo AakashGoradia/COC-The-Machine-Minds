@@ -220,7 +220,9 @@ const SubscriptionPage=()=> {
           </svg>
         </p>
         <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
-          <button class="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">BUY
+        <button
+              className="text-center lg:w-64 inline-flex text-white bg-[#008080] py-2 px-6 focus:outline-none hover:bg-[#ff7f50] rounded text-lg font-dm border-black border-2 font-medium"
+            >BUY
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -283,7 +285,9 @@ const SubscriptionPage=()=> {
           </svg>
         </p>
         <div class="p-6 text-center border-t border-gray-300">
-          <button class="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">BUY
+        <button
+              className="text-center lg:w-64 inline-flex text-white bg-[#008080] py-2 px-6 focus:outline-none hover:bg-[#ff7f50] rounded text-lg font-dm border-black border-2 font-medium"
+            >BUY
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -343,7 +347,9 @@ const SubscriptionPage=()=> {
           </svg>
         </p>
         <div class="p-6 text-center border-t border-gray-300">
-          <button class="flex items-center mt-auto text-white bg-indigo-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">BUY
+        <button
+              className="text-center lg:w-64 inline-flex text-white bg-[#008080] py-2 px-6 focus:outline-none hover:bg-[#ff7f50] rounded text-lg font-dm border-black border-2 font-medium"
+            >BUY
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>

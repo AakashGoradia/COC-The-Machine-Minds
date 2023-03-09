@@ -1,6 +1,3 @@
-import io
-import string
-import time
 import os
 import numpy as np
 import tensorflow as tf
@@ -28,7 +25,7 @@ def add_cors_headers(response):
     response.headers['Access-Control-Allow-Origin'] = '*'
     return response
 
-model_path = os.path.abspath(os.path.join(__file__ ,"../gender.pt"))
+model_path = './gender.pt'
 print(model_path)
 model = torch.load(model_path)
 
@@ -47,7 +44,6 @@ def gen(img):
     model = YOLO(model_path)
     results = model.predict(img, conf=0.06)
     for i in range(0, len(results[0].boxes.xyxy)):
-        k = results[0].boxes.xyxy[i].numpy()
         if results[0].boxes.cls[i].numpy() == 1:
             l.append("Male")
         else:
@@ -59,12 +55,6 @@ def gen(img):
 @app.route('/predict', methods=['POST'])
 @cross_origin(origin='*', headers=['Content-Type','Authorization'])
 def infer_image():
-    # if 'file' not in request.files:
-    #     return ""
-    # file = request.files.get('file')
-    # print(file)
-    # if not file:
-    #     return
     print(request.args)
     if 'url' not in request.args:
         return ""
