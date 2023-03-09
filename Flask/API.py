@@ -44,7 +44,6 @@ def gen(img):
     model = YOLO(model_path)
     results = model.predict(img, conf=0.06)
     for i in range(0, len(results[0].boxes.xyxy)):
-        # k = results[0].boxes.xyxy[i].numpy()
         if results[0].boxes.cls[i].numpy() == 1:
             l.append("Male")
         else:
