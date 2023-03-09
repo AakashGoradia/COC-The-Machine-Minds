@@ -19,7 +19,7 @@ from IPython.display import display, Image
 import torch
 import urllib
 import requests
-model = torch.load('/Users/krishangshah/PycharmProjects/pythonProject/venv/gender.pt')
+model = torch.load('Flask\gender.pt')
 
 f=None
 def prepare_image(img):
